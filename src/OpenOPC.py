@@ -843,7 +843,7 @@ class client():
 
    def groups(self):
       """Return a list of active tag groups"""
-      return self._groups.keys()
+      return list(self._groups)
 
    def remove(self, groups):
       """Remove the specified tag group(s)"""
